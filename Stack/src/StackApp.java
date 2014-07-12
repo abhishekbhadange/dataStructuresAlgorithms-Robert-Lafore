@@ -9,7 +9,7 @@ public class StackApp {
 		si.push(30);
 		si.push(40);
 		
-		while(!si.isEmpty()) {
+		while(!si.isEmpty()) {	//until it's empty
 			int value = si.pop();
 			System.out.print(value);
 			System.out.print(" ");
