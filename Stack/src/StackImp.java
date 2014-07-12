@@ -15,11 +15,11 @@ class StackImp {
 	public int pop() {
 		return stackArray[top--];
 	}
-	public boolean isFull() {
+	public boolean isFull() {			//true if stack is full
 		return (top == stackSize-1);
 	}
 	public boolean isEmpty() {
-		return (top == -1);
+		return (top == -1);				//true if stack is empty
 	}
 	public int peek() {
 		return stackArray[top];
