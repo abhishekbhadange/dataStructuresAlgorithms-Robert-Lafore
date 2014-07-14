@@ -1,4 +1,4 @@
-class StackImp {
+public class StackImp {
 	
 	private int stackSize;
 	private int[] stackArray;
