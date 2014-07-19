@@ -12,7 +12,7 @@ public class LinkList {
 		newLink.next = first;
 		first = newLink;
 	}
-	public Link removeFirst() {
+	public Link removeFirst() {		//assumes non-empty list
 		Link temp = first;
 		first = first.next;
 		return temp;
