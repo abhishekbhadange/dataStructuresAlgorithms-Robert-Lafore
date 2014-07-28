@@ -12,11 +12,8 @@ public class ArrayBub {
 	public void insert(int data) {
 		arr[nItems++] = data;
 	}
-	public int size() {
-		return nItems;
-	}
 	public void display() {
-		for(int i = 0; i < size(); i++)
+		for(int i = 0; i < nItems; i++)
 			System.out.print(arr[i] + " ");
 		System.out.println("");
 	}
