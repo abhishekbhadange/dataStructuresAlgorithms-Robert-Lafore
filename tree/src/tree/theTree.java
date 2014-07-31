@@ -95,7 +95,9 @@ public class theTree {
 		else {
 			Node successor = getSuccessor(current);
 			
-			if(isLeftChild)
+			if(current == root)
+				root = successor;
+			else if(isLeftChild)
 				parent.leftChild = successor;
 			else
 				parent.rightChild = successor;
