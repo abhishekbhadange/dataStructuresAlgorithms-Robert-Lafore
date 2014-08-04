@@ -9,18 +9,17 @@ public class DoubleHashApp {
 public static void main(String[] args) throws IOException {
 		
 		DataItem item;
-		int value, size, n, itemsPerCell, temp;
+		int value, size, n, temp;
 		
 		putText("Enter the size of Hash Table: ");
 		size = getInt();
 		putText("Enter the initial number of items: ");
 		n = getInt();
-		itemsPerCell = 10;
 		
 		HashTable theTable = new HashTable(size);
 		
 		for(int i = 0; i < n; i++) {
-			temp = (int)(java.lang.Math.random() * itemsPerCell * size);
+			temp = (int)(java.lang.Math.random() * 2 * size);
 			item = new DataItem(temp);
 			theTable.insert(item);
 		}
